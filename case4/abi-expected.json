@@ -1,0 +1,23 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "CommonInterface",
+      "base": "",
+      "fields": {
+        "u8": "UInt8",
+        "u16": "UInt16",
+        "u32": "UInt32",
+        "u64": "UInt64"
+      }
+    }
+  ],
+  "actions": [{
+      "action": "action1",
+      "type": "CommonInterface"
+    },{
+      "action": "action2",
+      "type": "CommonInterface"
+    }
+  ],
+  "tables": []
+}

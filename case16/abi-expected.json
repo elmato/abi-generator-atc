@@ -1,0 +1,17 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "MyAction",
+      "base": "",
+      "fields": {
+        "u64": "UInt64"
+      }
+    }
+  ],
+  "actions": [{
+      "action": "myaction",
+      "type": "MyAction"
+    }
+  ],
+  "tables": []
+}

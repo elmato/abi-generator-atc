@@ -1,0 +1,28 @@
+{
+  "types": [{
+      "newTypeName": "SimpleAlias",
+      "type": "Simple"
+    }
+  ],
+  "structs": [{
+      "name": "Simple",
+      "base": "",
+      "fields": {
+        "u64": "UInt64"
+      }
+    },{
+      "name": "MyAction",
+      "base": "",
+      "fields": {
+        "field": "UInt64",
+        "simple": "SimpleAlias"
+      }
+    }
+  ],
+  "actions": [{
+      "action": "myaction",
+      "type": "MyAction"
+    }
+  ],
+  "tables": []
+}

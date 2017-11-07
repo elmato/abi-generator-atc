@@ -1,0 +1,25 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "MyTable",
+      "base": "",
+      "fields": {
+        "u64": "UInt64",
+        "str": "String"
+      }
+    }
+  ],
+  "actions": [],
+  "tables": [{
+      "table": "mytable",
+      "indextype": "i64",
+      "keynames": [
+        "u64"
+      ],
+      "keytypes": [
+        "UInt64"
+      ],
+      "type": "MyTable"
+    }
+  ]
+}

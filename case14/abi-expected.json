@@ -1,0 +1,36 @@
+{
+  "types": [{
+      "newTypeName": "MyTypeAlias",
+      "type": "MyType"
+    }
+  ],
+  "structs": [{
+      "name": "MyType",
+      "base": "",
+      "fields": {
+        "u64": "UInt64",
+        "u32": "UInt32"
+      }
+    },{
+      "name": "MyTable",
+      "base": "",
+      "fields": {
+        "id": "UInt64",
+        "alias": "MyTypeAlias"
+      }
+    }
+  ],
+  "actions": [],
+  "tables": [{
+      "table": "mytable",
+      "indextype": "i64",
+      "keynames": [
+        "id"
+      ],
+      "keytypes": [
+        "UInt64"
+      ],
+      "type": "MyTable"
+    }
+  ]
+}
