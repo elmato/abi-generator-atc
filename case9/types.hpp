@@ -3,6 +3,6 @@
 
 //@abi table
 struct MyTable {
-   eos::string  key;
+   eosio::string  key;
    uint64_t     value;
 };

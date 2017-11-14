@@ -4,20 +4,20 @@
       "name": "MyTable",
       "base": "",
       "fields": {
-        "key": "String",
-        "value": "UInt64"
+        "key": "string",
+        "value": "uint64"
       }
     }
   ],
   "actions": [],
   "tables": [{
-      "table": "mytable",
-      "indextype": "str",
-      "keynames": [
+      "table_name": "mytable",
+      "index_type": "str",
+      "key_names": [
         "key"
       ],
-      "keytypes": [
-        "String"
+      "key_types": [
+        "string"
       ],
       "type": "MyTable"
     }

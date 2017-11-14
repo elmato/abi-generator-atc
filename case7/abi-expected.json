@@ -4,26 +4,26 @@
       "name": "MyTable",
       "base": "",
       "fields": {
-        "key1": "UInt64",
-        "key2": "UInt64",
-        "key3": "UInt64",
-        "str": "String"
+        "key1": "uint64",
+        "key2": "uint64",
+        "key3": "uint64",
+        "str": "string"
       }
     }
   ],
   "actions": [],
   "tables": [{
-      "table": "mytable",
-      "indextype": "i64i64i64",
-      "keynames": [
+      "table_name": "mytable",
+      "index_type": "i64i64i64",
+      "key_names": [
         "key1",
         "key2",
         "key3"
       ],
-      "keytypes": [
-        "UInt64",
-        "UInt64",
-        "UInt64"
+      "key_types": [
+        "uint64",
+        "uint64",
+        "uint64"
       ],
       "type": "MyTable"
     }

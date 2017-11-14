@@ -4,18 +4,18 @@
       "name": "CommonInterface",
       "base": "",
       "fields": {
-        "u8": "UInt8",
-        "u16": "UInt16",
-        "u32": "UInt32",
-        "u64": "UInt64"
+        "u8": "uint8",
+        "u16": "uint16",
+        "u32": "uint32",
+        "u64": "uint64"
       }
     }
   ],
   "actions": [{
-      "action": "action1",
+      "action_name": "action1",
       "type": "CommonInterface"
     },{
-      "action": "action2",
+      "action_name": "action2",
       "type": "CommonInterface"
     }
   ],

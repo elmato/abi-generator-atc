@@ -4,5 +4,5 @@
 //@abi table
 struct MyTable {
    uint64_t    u64;
-   eos::string str;
+   eosio::string str;
 };

@@ -1,6 +1,6 @@
 {
   "types": [{
-      "newTypeName": "SimpleAlias",
+      "new_type_name": "SimpleAlias",
       "type": "Simple"
     }
   ],
@@ -8,19 +8,19 @@
       "name": "Simple",
       "base": "",
       "fields": {
-        "u64": "UInt64"
+        "u64": "uint64"
       }
     },{
       "name": "MyAction",
       "base": "",
       "fields": {
-        "field": "UInt64",
+        "field": "uint64",
         "simple": "SimpleAlias"
       }
     }
   ],
   "actions": [{
-      "action": "myaction",
+      "action_name": "myaction",
       "type": "MyAction"
     }
   ],

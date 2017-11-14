@@ -10,5 +10,5 @@ struct MyKey {
 struct MyTable {
    MyKey        key1;
    uint128_t    key2;
-   eos::string  str;
+   eosio::string  str;
 };

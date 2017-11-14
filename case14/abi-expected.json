@@ -1,6 +1,6 @@
 {
   "types": [{
-      "newTypeName": "MyTypeAlias",
+      "new_type_name": "MyTypeAlias",
       "type": "MyType"
     }
   ],
@@ -8,27 +8,27 @@
       "name": "MyType",
       "base": "",
       "fields": {
-        "u64": "UInt64",
-        "u32": "UInt32"
+        "u64": "uint64",
+        "u32": "uint32"
       }
     },{
       "name": "MyTable",
       "base": "",
       "fields": {
-        "id": "UInt64",
+        "id": "uint64",
         "alias": "MyTypeAlias"
       }
     }
   ],
   "actions": [],
   "tables": [{
-      "table": "mytable",
-      "indextype": "i64",
-      "keynames": [
+      "table_name": "mytable",
+      "index_type": "i64",
+      "key_names": [
         "id"
       ],
-      "keytypes": [
-        "UInt64"
+      "key_types": [
+        "uint64"
       ],
       "type": "MyTable"
     }

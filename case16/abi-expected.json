@@ -4,12 +4,12 @@
       "name": "MyAction",
       "base": "",
       "fields": {
-        "u64": "UInt64"
+        "u64": "uint64"
       }
     }
   ],
   "actions": [{
-      "action": "myaction",
+      "action_name": "myaction",
       "type": "MyAction"
     }
   ],
