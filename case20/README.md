@@ -1,18 +1,18 @@
-# Case 8
+# Case 20
 
 ## ATC (Acceptance Test Criteria)
-- Try to generate ABI spec file with a valid table of index type i128i128
+- Try to generate ABI spec file with an action that has a vector of UDT as a field.
 - Verify ABI generator succeed
 - Verify the ABI json file is as expected (abi-expected.json)
 
 ## Command Run
 ```
-eosiocpp -g case8.abi types.hpp
+eosiocpp -g case20.abi types.hpp
 ```
 
 ## Result
 ```bash
-Generated case8.abi ...
+Generated case20.abi ...
 ```
 
 ## Conclusion

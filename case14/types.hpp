@@ -1,4 +1,4 @@
-#include <eoslib/types.hpp>
+#include <eosiolib/types.hpp>
 
 struct MyType {
    uint64_t u64;

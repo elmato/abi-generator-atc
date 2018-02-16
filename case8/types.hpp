@@ -1,5 +1,5 @@
-#include <eoslib/types.hpp>
-#include <eoslib/string.hpp>
+#include <string>
+#include <eosiolib/types.hpp>
 
 struct MyKey {
    uint64_t part1;
@@ -8,7 +8,7 @@ struct MyKey {
 
 //@abi table
 struct MyTable {
-   MyKey        key1;
-   uint128_t    key2;
-   eosio::string  str;
+   MyKey         key1;
+   uint128_t     key2;
+   std::string   str;
 };

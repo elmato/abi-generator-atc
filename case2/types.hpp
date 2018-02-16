@@ -1,4 +1,4 @@
-#include <eoslib/types.hpp>
+#include <eosiolib/types.hpp>
 
 struct A {
    uint64_t param3;

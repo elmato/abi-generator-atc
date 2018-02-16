@@ -1,6 +1,6 @@
-#include <eoslib/types.hpp>
+#include <eosiolib/types.hpp>
 
 //@abi action
-struct name {
+struct abi_def {
    uint16_t u16;
 };

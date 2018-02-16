@@ -1,4 +1,4 @@
-#include <eoslib/types.hpp>
+#include <eosiolib/types.hpp>
 
 /*   This is a multiline-comment
      @abi action

@@ -4,13 +4,16 @@
       "name": "MyTable",
       "base": "",
       "fields": [{
-          "name": "key1",
-          "type": "uint64"
+          "name": "pk0",
+          "type": "uint8"
         },{
-          "name": "key2",
-          "type": "uint64"
+          "name": "pk1",
+          "type": "uint16"
         },{
-          "name": "key3",
+          "name": "pk2",
+          "type": "uint8"
+        },{
+          "name": "pk3",
           "type": "uint64"
         },{
           "name": "str",
@@ -22,15 +25,17 @@
   "actions": [],
   "tables": [{
       "name": "mytable",
-      "index_type": "i64i64i64",
+      "index_type": "i64",
       "key_names": [
-        "key1",
-        "key2",
-        "key3"
+        "pk0",
+        "pk1",
+        "pk2",
+        "pk3"
       ],
       "key_types": [
-        "uint64",
-        "uint64",
+        "uint8",
+        "uint16",
+        "uint8",
         "uint64"
       ],
       "type": "MyTable"

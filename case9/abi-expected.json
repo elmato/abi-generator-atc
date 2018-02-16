@@ -3,15 +3,19 @@
   "structs": [{
       "name": "MyTable",
       "base": "",
-      "fields": {
-        "key": "string",
-        "value": "uint64"
-      }
+      "fields": [{
+          "name": "key",
+          "type": "string"
+        },{
+          "name": "value",
+          "type": "uint64"
+        }
+      ]
     }
   ],
   "actions": [],
   "tables": [{
-      "table_name": "mytable",
+      "name": "mytable",
       "index_type": "str",
       "key_names": [
         "key"

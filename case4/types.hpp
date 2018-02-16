@@ -1,5 +1,4 @@
-#include <eoslib/types.hpp>
-#include <eoslib/string.hpp>
+#include <eosiolib/types.hpp>
 
 //@abi action action1 action2
 struct CommonInterface {

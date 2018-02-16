@@ -3,23 +3,33 @@
   "structs": [{
       "name": "MyKey",
       "base": "",
-      "fields": {
-        "part1": "uint64",
-        "part2": "uint64"
-      }
+      "fields": [{
+          "name": "part1",
+          "type": "uint64"
+        },{
+          "name": "part2",
+          "type": "uint64"
+        }
+      ]
     },{
       "name": "MyTable",
       "base": "",
-      "fields": {
-        "key1": "MyKey",
-        "key2": "uint128",
-        "str": "string"
-      }
+      "fields": [{
+          "name": "key1",
+          "type": "MyKey"
+        },{
+          "name": "key2",
+          "type": "uint128"
+        },{
+          "name": "str",
+          "type": "string"
+        }
+      ]
     }
   ],
   "actions": [],
   "tables": [{
-      "table_name": "mytable",
+      "name": "mytable",
       "index_type": "i128i128",
       "key_names": [
         "key1",

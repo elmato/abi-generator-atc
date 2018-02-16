@@ -7,22 +7,22 @@
 
 ## Command Run
 ```
-eoscpp -g case12.abi types.hpp
+eosiocpp -g case12.abi types.hpp
 ```
 
 ## Result
 ```bash
-2783162ms thread-0   main.cpp:58                   main                 ] 999999 abi_generation_exception: Unable to generate abi
-name.size() <= sizeof(types::type_name): Type name > 32, ThisIsAVeryVeryVeryVeryLongTypeName
+1833672ms thread-0   main.cpp:55                   main                 ] 999999 abi_generation_exception: Unable to generate abi
+name.size() <= sizeof(type_name): Type name > 32, ThisIsAVeryVeryVeryVeryLongTypeName
     {"type":"ThisIsAVeryVeryVeryVeryLongTypeName","name":"ThisIsAVeryVeryVeryVeryLongTypeName","maxsize":32}
-    thread-0  abi_generator.hpp:419 add_struct
+    thread-0  abi_generator.cpp:465 add_struct
 
     {}
-    thread-0  abi_generator.hpp:194 handle_decl
+    thread-0  abi_generator.cpp:168 handle_decl
 
     {"decl_location":"/home/matu/dev/abi-generator-atc/case12/types.hpp:4:8"}
-    thread-0  abi_generator.hpp:551 handle_tagdecl_definition
-2783162ms thread-0   main.cpp:58                   main                 ] : 
+    thread-0  abi_generator.cpp:34 handle_tagdecl_definition
+1833673ms thread-0   main.cpp:55                   main                 ] output: {"types":[],"structs":[],"actions":[],"tables":[]}
 ```
 
 ## Conclusion

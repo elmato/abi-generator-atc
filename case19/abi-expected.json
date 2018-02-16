@@ -4,8 +4,11 @@
       "name": "MyAction",
       "base": "",
       "fields": [{
-          "name": "u64",
-          "type": "uint64"
+          "name": "data",
+          "type": "uint8[]"
+        },{
+          "name": "str",
+          "type": "string"
         }
       ]
     }

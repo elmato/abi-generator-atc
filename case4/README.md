@@ -7,12 +7,11 @@
 
 ## Command Run
 ```
-eoscpp -g case4.abi types.hpp
+eosiocpp -g case4.abi types.hpp
 ```
 
 ## Result
 ```bash
-➜  case4 git:(master) ✗ eoscpp -g case4.abi types.hpp
 Generated case4.abi ...
 ```
 

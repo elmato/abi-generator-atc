@@ -7,23 +7,23 @@
 
 ## Command Run
 ```
-eoscpp -g case15.abi types.hpp
+eosiocpp -g case15.abi types.hpp
 ```
 
 ## Result
 ```bash
-3121241ms thread-0   main.cpp:58                   main                 ] 999999 abi_generation_exception: Unable to generate abi
+1986252ms thread-0   main.cpp:55                   main                 ] 999999 abi_generation_exception: Unable to generate abi
 itr->second == full_name: Unable to add type 'ns2::Simple' because 'ns1::Simple' is already in.
 []
     {"full_name":"ns2::Simple","conflict":"ns1::Simple","t":[]}
-    thread-0  abi_generator.hpp:424 add_struct
+    thread-0  abi_generator.cpp:470 add_struct
 
     {}
-    thread-0  abi_generator.hpp:194 handle_decl
+    thread-0  abi_generator.cpp:168 handle_decl
 
     {"decl_location":"/home/matu/dev/abi-generator-atc/case15/types.hpp:16:8"}
-    thread-0  abi_generator.hpp:551 handle_tagdecl_definition
-3121241ms thread-0   main.cpp:58                   main                 ] :
+    thread-0  abi_generator.cpp:34 handle_tagdecl_definition
+1986252ms thread-0   main.cpp:55                   main                 ] output: {"types":[],"structs":[{"name":"Simple","base":"","fields":[{"name":"u64","type":"uint64"}]}],"actions":[],"tables":[]} 
 ```
 
 ## Conclusion

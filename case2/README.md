@@ -8,23 +8,22 @@
 
 ## Command Run
 ```
-eoscpp -g case2.abi types.hpp
+eosiocpp -g case2.abi types.hpp
 ```
 
 ## Result
 ```bash
-➜  case2 git:(master) ✗ eoscpp -g case2.abi types.hpp
-1768968ms thread-0   main.cpp:58                   main                 ] 999999 abi_generation_exception: Unable to generate abi
+676073ms thread-0   main.cpp:55                   main                 ] 999999 abi_generation_exception: Unable to generate abi
 false: Multiple inheritance not supported - C
     {"type":"C"}
-    thread-0  abi_generator.hpp:432 add_struct
+    thread-0  abi_generator.cpp:478 add_struct
 
     {}
-    thread-0  abi_generator.hpp:194 handle_decl
+    thread-0  abi_generator.cpp:168 handle_decl
 
     {"decl_location":"/home/matu/dev/abi-generator-atc/case2/types.hpp:11:8"}
-    thread-0  abi_generator.hpp:551 handle_tagdecl_definition
-1768968ms thread-0   main.cpp:58                   main                 ] :
+    thread-0  abi_generator.cpp:34 handle_tagdecl_definition
+676073ms thread-0   main.cpp:55                   main                 ] output: {"types":[],"structs":[],"actions":[],"tables":[]}
 ```
 
 ## Conclusion

@@ -1,8 +1,8 @@
-#include <eoslib/types.hpp>
-#include <eoslib/string.hpp>
+#include <string>
+#include <eosiolib/types.hpp>
 
 //@abi table
 struct MyTable {
-   eosio::string  key;
+   std::string  key;
    uint64_t     value;
 };

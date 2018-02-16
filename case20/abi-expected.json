@@ -1,0 +1,30 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "row",
+      "base": "",
+      "fields": [{
+          "name": "cells",
+          "type": "uint64[]"
+        }
+      ]
+    },{
+      "name": "my_action",
+      "base": "",
+      "fields": [{
+          "name": "id",
+          "type": "uint64"
+        },{
+          "name": "rows",
+          "type": "row[]"
+        }
+      ]
+    }
+  ],
+  "actions": [{
+      "name": "myaction",
+      "type": "my_action"
+    }
+  ],
+  "tables": []
+}

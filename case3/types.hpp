@@ -1,7 +1,9 @@
-#include <eoslib/types.hpp>
-#include <eoslib/string.hpp>
+#include <string>
+#include <eosiolib/types.hpp>
+#include <eosiolib/vector.hpp>
 
 using namespace eosio;
+using namespace std;
 
 //@abi action
 struct SimpleAction{

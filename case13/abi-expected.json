@@ -7,20 +7,26 @@
   "structs": [{
       "name": "Simple",
       "base": "",
-      "fields": {
-        "u64": "uint64"
-      }
+      "fields": [{
+          "name": "u64",
+          "type": "uint64"
+        }
+      ]
     },{
       "name": "MyAction",
       "base": "",
-      "fields": {
-        "field": "uint64",
-        "simple": "SimpleAlias"
-      }
+      "fields": [{
+          "name": "field",
+          "type": "uint64"
+        },{
+          "name": "simple",
+          "type": "SimpleAlias"
+        }
+      ]
     }
   ],
   "actions": [{
-      "action_name": "myaction",
+      "name": "myaction",
       "type": "MyAction"
     }
   ],
