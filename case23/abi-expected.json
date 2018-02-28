@@ -1,0 +1,57 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "set_account_limits",
+      "base": "",
+      "fields": [{
+          "name": "account",
+          "type": "account_name"
+        },{
+          "name": "ram_bytes",
+          "type": "uint64"
+        },{
+          "name": "net_weight",
+          "type": "uint64"
+        },{
+          "name": "cpu_weight",
+          "type": "uint64"
+        }
+      ]
+    },{
+      "name": "set_global_limits",
+      "base": "",
+      "fields": [{
+          "name": "cpu_usec_per_prd",
+          "type": "int64"
+        }
+      ]
+    },{
+      "name": "set_producers",
+      "base": "",
+      "fields": []
+    },{
+      "name": "require_auth",
+      "base": "",
+      "fields": [{
+          "name": "from",
+          "type": "account_name"
+        }
+      ]
+    }
+  ],
+  "actions": [{
+      "name": "setalimits",
+      "type": "set_account_limits"
+    },{
+      "name": "setglimits",
+      "type": "set_global_limits"
+    },{
+      "name": "setprods",
+      "type": "set_producers"
+    },{
+      "name": "reqauth",
+      "type": "require_auth"
+    }
+  ],
+  "tables": []
+}

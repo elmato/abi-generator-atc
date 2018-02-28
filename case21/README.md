@@ -1,7 +1,7 @@
 # Case 21
 
 ## ATC (Acceptance Test Criteria)
-- Try to generate ABI spec file with an action that uses an alias (vector of UDT) for a field type.
+- Try to generate ABI spec file with an action that uses an alias of a vector for a field type.
 - Verify ABI generator succeed
 - Verify the ABI json file is as expected (abi-expected.json)
 

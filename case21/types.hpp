@@ -1,22 +1,15 @@
 #include <string>
 #include <vector>
 #include <eosiolib/types.hpp>
+#include <eosiolib/print.hpp>
 
 using namespace std;
 
-// template <typename T>
-// struct row {
-//    vector<T> cells;
-// };
-
-// typedef row<uint64_t> row64;
-
-struct row64 {
-   vector<uint64_t> cells;
+struct row {
+  std::vector<uint32_t> cells;
 };
 
-//typedef vector<row64> array_of_rows;
-using array_of_rows = vector<row64>;
+typedef vector<row> array_of_rows;
 
 //@abi action
 struct my_action {

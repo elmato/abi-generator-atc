@@ -1,0 +1,25 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "anyaction",
+      "base": "",
+      "fields": [{
+          "name": "from",
+          "type": "account_name"
+        },{
+          "name": "type",
+          "type": "string"
+        },{
+          "name": "data",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "actions": [{
+      "name": "anyaction",
+      "type": "anyaction"
+    }
+  ],
+  "tables": []
+}

@@ -1,0 +1,145 @@
+{
+  "types": [{
+      "new_type_name": "identity_name",
+      "type": "uint64"
+    },{
+      "new_type_name": "property_name",
+      "type": "uint64"
+    }
+  ],
+  "structs": [{
+      "name": "create",
+      "base": "",
+      "fields": [{
+          "name": "creator",
+          "type": "account_name"
+        },{
+          "name": "identity",
+          "type": "uint64"
+        }
+      ]
+    },{
+      "name": "certvalue",
+      "base": "",
+      "fields": [{
+          "name": "property",
+          "type": "property_name"
+        },{
+          "name": "type",
+          "type": "string"
+        },{
+          "name": "data",
+          "type": "int8[]"
+        },{
+          "name": "memo",
+          "type": "string"
+        },{
+          "name": "confidence",
+          "type": "uint8"
+        }
+      ]
+    },{
+      "name": "certprop",
+      "base": "",
+      "fields": [{
+          "name": "bill_storage_to",
+          "type": "account_name"
+        },{
+          "name": "certifier",
+          "type": "account_name"
+        },{
+          "name": "identity",
+          "type": "identity_name"
+        },{
+          "name": "values",
+          "type": "certvalue[]"
+        }
+      ]
+    },{
+      "name": "settrust",
+      "base": "",
+      "fields": [{
+          "name": "trustor",
+          "type": "account_name"
+        },{
+          "name": "trusting",
+          "type": "account_name"
+        },{
+          "name": "trust",
+          "type": "uint8"
+        }
+      ]
+    },{
+      "name": "certrow",
+      "base": "",
+      "fields": [{
+          "name": "property",
+          "type": "property_name"
+        },{
+          "name": "trusted",
+          "type": "uint64"
+        },{
+          "name": "certifier",
+          "type": "account_name"
+        },{
+          "name": "confidence",
+          "type": "uint8"
+        },{
+          "name": "type",
+          "type": "string"
+        },{
+          "name": "data",
+          "type": "int8[]"
+        }
+      ]
+    },{
+      "name": "identrow",
+      "base": "",
+      "fields": [{
+          "name": "identity",
+          "type": "uint64"
+        },{
+          "name": "creator",
+          "type": "account_name"
+        }
+      ]
+    }
+  ],
+  "actions": [{
+      "name": "create",
+      "type": "create"
+    },{
+      "name": "certprop",
+      "type": "certprop"
+    },{
+      "name": "settrust",
+      "type": "settrust"
+    }
+  ],
+  "tables": [{
+      "name": "certs",
+      "index_type": "i64i64i64",
+      "key_names": [
+        "property",
+        "trusted",
+        "certifier"
+      ],
+      "key_types": [
+        "property_name",
+        "uint64",
+        "account_name"
+      ],
+      "type": "certrow"
+    },{
+      "name": "idents",
+      "index_type": "i64",
+      "key_names": [
+        "identity"
+      ],
+      "key_types": [
+        "uint64"
+      ],
+      "type": "identrow"
+    }
+  ]
+}

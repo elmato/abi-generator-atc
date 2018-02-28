@@ -1,7 +1,7 @@
 # Case 19
 
 ## ATC (Acceptance Test Criteria)
-- Try to generate ABI spec file with an action that has a uint8_t vector as a field.
+- Try to generate ABI spec file with an action that has a vector of uint8_t as a field.
 - Verify ABI generator succeed
 - Verify the ABI json file is as expected (abi-expected.json)
 

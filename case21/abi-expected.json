@@ -1,11 +1,15 @@
 {
-  "types": [],
+  "types": [{
+      "new_type_name": "array_of_rows",
+      "type": "row[]"
+    }
+  ],
   "structs": [{
       "name": "row",
       "base": "",
       "fields": [{
           "name": "cells",
-          "type": "uint64[]"
+          "type": "uint32[]"
         }
       ]
     },{
@@ -16,7 +20,7 @@
           "type": "uint64"
         },{
           "name": "rows",
-          "type": "row[]"
+          "type": "array_of_rows"
         }
       ]
     }

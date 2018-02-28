@@ -85,7 +85,39 @@
 - Verify ABI generator throws an error
 - Verify the ABI json file is not generated
 
+# Case 18
+- Try to generate ABI spec file with a table that has the primary key split on many fields.
+- Verify ABI generator succeed
+- Verify the ABI json file is as expected (abi-expected.json)
 
-Details are inside each case subfolder
+# Case 19
+- Try to generate ABI spec file with an action that has a vector of uint8_t as a field.
+- Verify ABI generator succeed
+- Verify the ABI json file is as expected (abi-expected.json)
 
-   
+# Case 20
+- Try to generate ABI spec file with an action that has a vector of structs as a field.
+- Verify ABI generator succeed
+- Verify the ABI json file is as expected (abi-expected.json)
+
+# Case 21
+- Try to generate ABI spec file with an action that uses an alias of a vector for a field type.
+- Verify ABI generator succeed
+- Verify the ABI json file is as expected (abi-expected.json)
+
+# Case 22
+- Try to generate ABI spec file with an action declared using the ACTION macro.
+- Verify ABI generator succeed
+- Verify the ABI json file is as expected (abi-expected.json)
+
+# Case 23
+- Try to generate ABI spec file for a full-contract similar to `test.system`.
+- Verify ABI generator succeed
+- Verify the ABI json file is as expected (abi-expected.json)
+
+# Case 24
+- Try to generate ABI spec file for a full-contract similar to `identity`.
+- Verify ABI generator succeed
+- Verify the ABI json file is as expected (abi-expected.json)
+
+Details are inside each case subfolder   

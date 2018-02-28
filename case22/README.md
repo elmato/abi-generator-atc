@@ -1,18 +1,18 @@
-# Case 20
+# Case 22
 
 ## ATC (Acceptance Test Criteria)
-- Try to generate ABI spec file with an action that has a vector of structs as a field.
+- Try to generate ABI spec file with an action declared using the ACTION macro.
 - Verify ABI generator succeed
 - Verify the ABI json file is as expected (abi-expected.json)
 
 ## Command Run
 ```
-eosiocpp -g case20.abi types.hpp
+eosiocpp -g case22.abi types.hpp
 ```
 
 ## Result
 ```bash
-Generated case20.abi ...
+Generated case22.abi ...
 ```
 
 ## Conclusion
