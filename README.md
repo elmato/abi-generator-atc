@@ -120,4 +120,14 @@
 - Verify ABI generator succeed
 - Verify the ABI json file is as expected (abi-expected.json)
 
+# Case 25
+- Try to generate ABI spec file using the new contract format (like `simple.token`).
+- Verify ABI generator succeed
+- Verify the ABI json file is as expected (abi-expected.json)
+
+# Case 26
+- Try to generate ABI spec file of a contract that inherits from another contract.
+- Verify ABI generator succeed
+- Verify the ABI json file is as expected (abi-expected.json)
+
 Details are inside each case subfolder   

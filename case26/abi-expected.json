@@ -1,0 +1,79 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "create",
+      "base": "",
+      "fields": [{
+          "name": "issuer",
+          "type": "account_name"
+        },{
+          "name": "maximum_supply",
+          "type": "asset"
+        },{
+          "name": "issuer_can_freeze",
+          "type": "uint8"
+        },{
+          "name": "issuer_can_recall",
+          "type": "uint8"
+        },{
+          "name": "issuer_can_whitelist",
+          "type": "uint8"
+        }
+      ]
+    },{
+      "name": "issue",
+      "base": "",
+      "fields": [{
+          "name": "to",
+          "type": "account_name"
+        },{
+          "name": "quantity",
+          "type": "asset"
+        },{
+          "name": "memo",
+          "type": "string"
+        }
+      ]
+    },{
+      "name": "transfer",
+      "base": "",
+      "fields": [{
+          "name": "from",
+          "type": "account_name"
+        },{
+          "name": "to",
+          "type": "account_name"
+        },{
+          "name": "quantity",
+          "type": "asset"
+        },{
+          "name": "memo",
+          "type": "string"
+        }
+      ]
+    },{
+      "name": "incsupply",
+      "base": "",
+      "fields": [{
+          "name": "diff",
+          "type": "int64"
+        }
+      ]
+    }
+  ],
+  "actions": [{
+      "name": "create",
+      "type": "create"
+    },{
+      "name": "issue",
+      "type": "issue"
+    },{
+      "name": "transfer",
+      "type": "transfer"
+    },{
+      "name": "incsupply",
+      "type": "incsupply"
+    }
+  ],
+  "tables": []
+}

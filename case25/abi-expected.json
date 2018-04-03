@@ -1,0 +1,19 @@
+{
+  "types": [],
+  "structs": [{
+      "name": "hi",
+      "base": "",
+      "fields": [{
+          "name": "user",
+          "type": "account_name"
+        }
+      ]
+    }
+  ],
+  "actions": [{
+      "name": "hi",
+      "type": "hi"
+    }
+  ],
+  "tables": []
+}
